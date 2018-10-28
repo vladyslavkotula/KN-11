@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   title>Галерея FancyBox</title>
+   <link  href="jquery.fancybox.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery">
+     <a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images">
+        <img src="https://c1.staticflickr.com/9/8148/29324593462_f890687b7a_m.jpg" />
+     </a>
+     <a href="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" data-fancybox="images">
+       <img src="https://c2.staticflickr.com/6/5499/30972532232_e9a298a0c5_m.jpg" />
+     </a>
+     <a href="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_b_d.jpg" data-fancybox="images">
+        <img src="https://farm1.staticflickr.com/560/31434966252_8e1bc946da_m_d.jpg" />
+      </a>
+   </div>
+<script src="jquery.js"></script>
+<script src="jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("[data-fancybox]").fancybox({
+   protect: true,
+   toolbar  : false
+  });
+});
+</script>
+</body>
+</html>
